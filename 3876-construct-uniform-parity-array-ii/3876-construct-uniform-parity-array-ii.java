@@ -10,15 +10,6 @@ class Solution {
                 me=Math.min(me,nums1[i]);
             }
         }
-        if(mo==Integer.MAX_VALUE){
-            return true;
-        }
-        else if(me==Integer.MAX_VALUE){
-            return true;
-        }
-        else if(mo<me){
-            return true;
-        }
-        return false;
+        return (mo==Integer.MAX_VALUE || me==Integer.MAX_VALUE)  ? true  : mo<me ;
     }
 }
